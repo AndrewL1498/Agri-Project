@@ -36,19 +36,20 @@ git commit -m "Add: short description of your changes"
 git push origin feature/your-feature-name
 
 ### 8. Raise a Pull Request (PR)
-Go to your forked repo
-Click "Compare & Pull Request"
-Add a proper title and description
-Link the related issue (e.g., Fixes #12)
+- Go to your forked repo
+- Click "Compare & Pull Request"
+- Add a proper title and description
+- Link the related issue (e.g., Fixes #12)
 
-⚠️ Important Rules
-❌ Do NOT close issues without raising a PR
-❌ Do not work on issues that are not assigned to you
-❌ Do not submit unrelated changes
-✅ If you cannot continue, comment and ask to be unassigned
-✅ Always raise a PR after completing the work
-✅ Be respectful and collaborative
-💬 If You Cannot Continue
+### ⚠️ Important Rules
+- ❌ Do NOT close issues without raising a PR (this may lead to being unassigned or ignored in future contributions)
+- ❌ Do not work on issues that are not assigned to you
+- ❌ Do not submit unrelated changes
+- ✅ If you cannot continue, comment and ask to be unassigned
+- ✅ Always raise a PR after completing the work
+- ✅ Be respectful and collaborative
+- ⚠️ Issues left inactive for a long time may be reassigned
 
+### 💬 If You Cannot Continue
 Use this message:
 Hi, I’m unable to continue working on this issue. Please unassign me so others can contribute.
