@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg bg-dark border-bottom fixed-top">
+        <nav className="navbar navbar-expand-xl bg-dark border-bottom fixed-top">
             <div className="container p-2">
                 <a className="navbar-brand logo" href="/">
                     <img src='./krishilogobg.png' className='ps-4' alt="Logo"
