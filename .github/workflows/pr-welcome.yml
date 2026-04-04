@@ -1,7 +1,8 @@
 name: PR Welcome Message
 
 on:
-  workflow_dispatch:
+  pull_request_target:
+    types: [opened]
 
 jobs:
   welcome:
@@ -18,7 +19,6 @@ jobs:
               issue_number: context.payload.pull_request.number,
               body: `Thanks for your PR @${username}! 🎉
 
-## Checklist:
 - [ ] Follow project guidelines
 - [ ] Tested locally
 - [ ] Clear PR title
