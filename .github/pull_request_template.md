@@ -33,8 +33,9 @@ Explain how you tested your changes.
 
 ---
 
-## 📸 Screenshots (if applicable)
-(Add before/after screenshots here)
+## 📸 Screenshots (Mandatory if UI changes)
+
+Please add before and after screenshots to clearly show the UI changes made in this PR.
 
 ---
 
