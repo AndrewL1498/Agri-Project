@@ -24,13 +24,13 @@ jobs:
               issue_number: context.payload.pull_request.number,
               body: `Thanks for your PR @${username}! 🎉
 
-            - [ ] Follow project guidelines
-            - [ ] Tested locally
-            - [ ] Clear PR title
-            - [ ] Linked issue (if any)
-            - [ ] Screenshots (if UI changes)
+              - [ ] Follow project guidelines
+              - [ ] Tested locally
+              - [ ] Clear PR title
+              - [ ] Linked issue (if any)
+              - [ ] Screenshots (if UI changes)
 
-            If you like this project, consider giving it a star! ⭐
+              If you like this project, consider giving it a star! ⭐
 
-            A maintainer will review it soon.`
+              A maintainer will review it soon.`
             });
