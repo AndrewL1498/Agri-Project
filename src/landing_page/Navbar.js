@@ -29,12 +29,6 @@ function Navbar() {
                             <Link className="nav-link detect-btn" to="/detect-disease">Detect Disease</Link>
                         </li>
                         <li className="nav-item">
-                            <Link className="nav-link" to="/about">About</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/contact">Contact</Link>
-                        </li>
-                        <li className="nav-item">
                             <Link className="nav-link signup-btn" to="/signup">Sign up</Link>
                         </li>
                         <li className="nav-item">
@@ -42,16 +36,6 @@ function Navbar() {
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link ecommerce-btn" to="/ecommerce">E-commerce</Link>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#!" target="_blank" rel="noopener noreferrer">
-                                <FaGithub size={20} />
-                            </a>
-                        </li>
-                        <li className="nav-item">
-                            <a className="nav-link" href="#!" target="_blank" rel="noopener noreferrer">
-                                <FaLinkedin size={20} />
-                            </a>
                         </li>
                     </ul>
                 </div>
