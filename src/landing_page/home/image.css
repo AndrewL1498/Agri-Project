@@ -234,36 +234,62 @@ body {
   color: #d4ffd4;
 }
 
-/* 🌿 Signup Button (first child) */
-.nav-item:first-child .nav-link {
+/* Features Button */
+.nav-item .nav-link.features-btn {
+  background: linear-gradient(90deg, #009e60, #00b140);
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 8px 16px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+.nav-item .nav-link.features-btn:hover {
+  background: linear-gradient(90deg, #00b140, #009e60);
+  transform: translateY(-2px);
+}
+
+/* Learn Button */
+.nav-item .nav-link.learn-btn {
+  background: linear-gradient(90deg, #56ab2f, #a8e063);
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 8px 16px;
+  transition: 0.3s ease;
+  font-weight: bold;
+}
+.nav-item .nav-link.learn-btn:hover {
+  background: linear-gradient(90deg, #76b852, #8DC26F);
+  transform: translateY(-2px);
+}
+
+/* Sign up Button */
+.nav-item .nav-link.signup-btn {
   background: linear-gradient(90deg, #009e60, #00b140);
   color: #fff !important;
   border-radius: 10px;
   padding: 8px 16px;
   transition: 0.3s ease;
 }
-
-.nav-item:first-child .nav-link:hover {
+.nav-item .nav-link.signup-btn:hover {
   background: linear-gradient(90deg, #00b140, #009e60);
   transform: translateY(-2px);
 }
 
-/* 🌱 Login Button (second child) */
-.nav-item:nth-child(2) .nav-link {
+/* Login Button */
+.nav-item .nav-link.login-btn {
   background: linear-gradient(90deg, #56ab2f, #a8e063);
   color: #fff !important;
   border-radius: 10px;
   padding: 8px 16px;
   transition: 0.3s ease;
 }
-
-.nav-item:nth-child(2) .nav-link:hover {
+.nav-item .nav-link.login-btn:hover {
   background: linear-gradient(90deg, #76b852, #8DC26F);
   transform: translateY(-2px);
 }
 
-/* 🛒 E-commerce Button (last child) */
-.nav-item:last-child .nav-link {
+/* E-commerce Button */
+.nav-item .nav-link.ecommerce-btn {
   background: linear-gradient(90deg, #43cea2, #185a9d);
   color: #fff !important;
   border-radius: 10px;
@@ -271,9 +297,22 @@ body {
   font-weight: 600;
   transition: 0.3s ease;
 }
-
-.nav-item:last-child .nav-link:hover {
+.nav-item .nav-link.ecommerce-btn:hover {
   background: linear-gradient(90deg, #185a9d, #43cea2);
+  transform: translateY(-2px);
+}
+
+/* Detect Disease Button */
+.nav-item .nav-link.detect-btn {
+  background: linear-gradient(90deg, #f59e0b, #ef4444);
+  color: #fff !important;
+  border-radius: 10px;
+  padding: 8px 16px;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+.nav-item .nav-link.detect-btn:hover {
+  background: linear-gradient(90deg, #ef4444, #f59e0b);
   transform: translateY(-2px);
 }
 
@@ -295,8 +334,6 @@ body {
   text-decoration: none;
   color:white;
 }
-
-
 
 /* logo */
 .logo img {
@@ -320,7 +357,7 @@ body {
 
 
 
-/* 🌾 Footer Styling – Green Theme */
+/* Footer Styling – Green Theme */
 .footer {
   background: linear-gradient(135deg, #004d00, #00b140); /* deep-to-light green */
   color: #ffffff;
@@ -452,6 +489,133 @@ body::before, body::after {
   justify-content: center;
 }
 
+
+/* Contributors */
+/* Main section */
+#contributors {
+  padding: 70px 30px;
+  background: linear-gradient(180deg, #0d1f0d 0%, #0f0f0f 100%);
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+#contributors::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 10%; width: 80%; height: 1px;
+  background: linear-gradient(90deg, transparent, #00b140, transparent);
+}
+/* Header */
+.contributors-header { margin-bottom: 48px; }
+.contributors-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+.contributors-title::after,
+.contributors-title::before {
+  background: linear-gradient(to right, #009e60, #9cff57);
+}
+.contributors-subtitle {
+  font-size: 1rem;
+  color: #a0c8a0;
+  margin: 8px auto 0;
+  max-width: 500px;
+  line-height: 1.6;
+}
+.contributors-loading { color: #a0c8a0; font-size: 1rem; margin-top: 20px; }
+
+/* Grid */
+.contributors-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 24px;
+  justify-items: center;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Card */
+.contributor-card {
+  background: #1a2e1a;
+  border: 1px solid rgba(0, 177, 64, 0.2);
+  border-radius: 14px;
+  padding: 24px 16px 20px;
+  width: 100%;
+  max-width: 190px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.contributor-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 12px 30px rgba(0, 177, 64, 0.2);
+  border-color: rgba(0, 177, 64, 0.6);
+}
+
+/* Avatar */
+.contributor-avatar-wrapper {
+  width: 90px; height: 90px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, #009e60, #9cff57);
+  flex-shrink: 0;
+}
+.contributor-avatar {
+  width: 100%; height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #1a2e1a;
+  transition: transform 0.3s ease;
+}
+.contributor-card:hover .contributor-avatar { transform: scale(1.06); }
+
+/* Name & Link */
+.contributor-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.contributor-name {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #e0ffe0;
+  text-align: center;
+  word-break: break-word;
+}
+.contributor-link {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #9cff57;
+  text-decoration: none;
+  border: 1px solid rgba(156, 255, 87, 0.35);
+  border-radius: 20px;
+  padding: 4px 14px;
+  transition: background 0.25s ease, color 0.25s ease, border-color 0.25s ease;
+}
+.contributor-link:hover {
+  background: rgba(156, 255, 87, 0.15);
+  color: #ffffff;
+  border-color: #9cff57;
+  text-decoration: none;
+
+  /* Contributors Mobile Responsive */
+}
+@media (max-width: 768px) {
+  #contributors { padding: 50px 16px; }
+  .contributors-title { font-size: 1.6rem; }
+  .contributors-grid { grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; }
+  .contributor-card { padding: 18px 12px 16px; max-width: 100%; }
+  .contributor-avatar-wrapper { width: 74px; height: 74px; }
+}
+
 /* Mobile responsive */
 @media (max-width: 768px) {
   .hover-underline.heading {
@@ -461,5 +625,113 @@ body::before, body::after {
     width: 100% !important;
     height: auto !important;
     margin-bottom: 20px;
+  }
+}
+
+/* New Subtitle Styling */
+.hero-subtitle {
+  font-size: 1.2rem;
+  color: #e2e8f0;
+  max-width: 800px;
+  /* top | right | bottom | left */
+  /* The negative top margin pulls it up close to the title */
+  margin: -20px auto 30px auto;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+/* Make it slightly smaller on mobile */
+@media (max-width: 768px) {
+  .hero-subtitle {
+    font-size: 1rem;
+    margin: -10px auto 25px auto;
+    padding: 0 15px;
+  }
+
+  .img-title {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: #ffffff;
+ 
+  min-height: 40px; /* ensures same height for all titles */
+}
+
+.img-desc {
+  font-size: 13px;
+  color: #d1d5db;
+  max-width: 85%;
+  line-height: 1.5;
+  
+  min-height: 60px; /* THIS fixes alignment */
+}
+
+#img:hover .img-title {
+  color: #00ff88;
+  transition: 0.3s;
+}
+
+#img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.img-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100%;
+}
+
+.up-image, .down-image {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  row-gap: 20px;
+}
+
+}
+
+/* ------NAVBAR RESPONSIVE (Mobile Fix)------ */
+@media (max-width: 991px) {
+  .navbar {
+    height: auto;
+    padding: 10px 15px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-item .nav-link {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    padding: 10px 14px;
+    border-radius: 8px;
+  }
+
+  .navbar-collapse {
+    background: linear-gradient(135deg, #006400, #003b16);
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+  }
+
+  .logo img {
+    width: 90px;
+    max-height: 40px;
   }
 }

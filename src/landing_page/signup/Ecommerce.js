@@ -1,6 +1,7 @@
 import React from "react";
 import "./Ecommerce.css";
 import Navbar from "../Navbar";
+import Footer from "../Footer";
 
 function Ecommerce() {
   return (
@@ -61,9 +62,7 @@ function Ecommerce() {
       </section>
 
       {/* Footer */}
-      <footer className="footer">
-        <p>© 2025 Agri E-Commerce | Built with ❤️ for Indian Farmers</p>
-      </footer>
+      <Footer/>
     </div>
     </>
   );

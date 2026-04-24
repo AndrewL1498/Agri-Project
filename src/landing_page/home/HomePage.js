@@ -6,6 +6,8 @@ import Footer from '../Footer';
 import "./image.css";
 import Solution from './Solution';
 import Space from './Space';
+import Contributors from '../Contributors';
+import WeatherInsights from './services/WeatherInsights';
 
 
 function HomePage() {
@@ -14,9 +16,11 @@ function HomePage() {
         <>
             <Navbar/>
             <Hero/>
+            <WeatherInsights/>
             <Space/>
             <Solution/>
             <FAQ/>
+            <Contributors/>
             <Footer/>
         </>
      );

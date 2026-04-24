@@ -1,7 +1,6 @@
 import React from 'react';
 import "./index";
 import Navbar from './landing_page/Navbar';
-import Footer from './landing_page/Footer';
 
 function PageSolution() {
     return (
@@ -18,7 +17,7 @@ function PageSolution() {
                 </div>
                 <div className="front">
                     <div className="image">
-                        <img src="/media/images/sol1.jpg" />
+                        <img src="/media/images/sol1.jpg" alt="Crop solution" />
                         <h6><i>Common in wheat, bajra, and vegetables</i></h6>
                     </div>
                 </div>
@@ -35,7 +34,7 @@ function PageSolution() {
                 </div>
                 <div className="front">
                     <div className="image">
-                        <img src="/media/images/sol02new.jpg" />
+                        <img src="/media/images/sol02new.jpg" alt="Crop solution" />
                         <h6><i>Late Blight – Potato and Tomato disease</i></h6>
                     </div>
                 </div>
@@ -52,7 +51,7 @@ function PageSolution() {
                 </div>
                 <div className="front">
                     <div className="image">
-                        <img src="/media/images/sol03new.jpg" />
+                        <img src="/media/images/sol03new.jpg" alt="Crop solution" />
                         <h6><i>Stem Borer – Rice (paddy)</i></h6>
                     </div>
                 </div>
@@ -69,7 +68,7 @@ function PageSolution() {
                 </div>
                 <div className="front">
                     <div className="image">
-                        <img src="/media/images/sol04new.jpg" />
+                        <img src="/media/images/sol04new.jpg" alt="Crop solution" />
                         <h6><i>Aphids – Cotton, vegetables, and fruits</i></h6>
                     </div>
                 </div>
@@ -85,7 +84,7 @@ function PageSolution() {
                 </div>
                 <div className="front">
                     <div className="image">
-                        <img src="/media/images/sol07new.jpg" />
+                        <img src="/media/images/sol07new.jpg" alt="Crop solution" />
                         <h6><i>Boron Deficiency – Tomatoes, fruits, pulses, maize</i></h6>
                     </div>
                 </div>
@@ -98,7 +97,7 @@ function PageSolution() {
                 </div>
                 <div className="front">
                     <div className="image">
-                        <img src="/media/images/seemore.png" />
+                        <img src="/media/images/seemore.png" alt="Crop solution" />
                         <h6><i></i></h6>
                     </div>
                 </div>
