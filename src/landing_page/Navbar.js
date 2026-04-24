@@ -37,15 +37,6 @@ function Navbar() {
                         <li className="nav-item">
                             <Link className="nav-link ecommerce-btn" to="/ecommerce">E-commerce</Link>
                         </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/features">Features</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/learn">Learn</Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link className="nav-link" to="/detect-disease">Detect Disease</Link>
-                        </li>
                     </ul>
                 </div>
             </div>
